@@ -1,0 +1,651 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.main-content{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container{
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+nav{
+	display: flex !important;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 10px 60px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #232323;
+}
+
+.navigation-links{
+	display: inline-block;
+	text-decoration: none !important;
+	margin: 15px;
+	color: #232323;
+	transition: all 0.3s ease-in-out;
+}
+
+.navigation-links:hover{
+	color: #62bf06;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.navigation-links.active{
+	color: #fff;
+	background-color: #62bf06;
+	padding: 5px 10px;
+}
+
+.navigation-bar li{
+	list-style: none;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	color: #232323;
+}
+
+.fa-pied-piper-alt{
+	font-size: 50px;
+	color: #6206bf;
+}
+
+.font-text{
+	font-size: 10px;
+	color: #232323;
+	text-align: center;
+}
+
+.welcome-row{
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://cdn.pixabay.com/photo/2016/12/23/18/28/singapore-1927720_960_720.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 480px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.welcome-text{
+	font-size: 30px;
+	padding-top: 150px;
+	font-family: 'Yatra One', cursive;
+	padding-left: 150px;
+	padding-bottom: 10px;
+}
+
+.welcome-col h2{
+	font-size: 40px;
+	font-family: 'Oswail', sans-serif;
+	padding-bottom: 30px;
+}
+
+.welcome-btn{
+  font-family: "Arial";
+  display: inline-block;
+  text-decoration: none !important;
+  border: 1px solid #fff;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  margin-left: 150px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 20px;
+  background-clip: padding-box;
+  font-size: 1em;
+  padding: .1em 1.5em;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  background-color: #3f6fa0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  zoom: 1;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+}
+
+.welcome-btn:hover {
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  background-color: #62bf06;
+  color: #ffffff;
+}
+.welcome-btn:focus {
+  outline: none;
+}
+
+.explore-row{
+	text-align: center !important;
+}
+
+.explore-row p{
+	color: #232323;
+	font-size: 23px;
+	font-family: 'Oswail', sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.explore-row h2{
+	color: #232323;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Oswail', sans-serif;
+	letter-spacing: 1px;
+}
+
+.explore-col{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.explore-image-1,
+.explore-image-2,
+.explore-image-3{
+	width: 270px !important;
+	height: 550px;
+	background-color: #f0f0f0;
+	border: 1px solid #62bf06;
+	margin-right: 40px;
+	transition: all 0.3s ease-in-out;
+}
+
+.explore-overlay-img-1{
+	background-image: url('https://i.ytimg.com/vi/IFdoRTvnBwU/maxresdefault.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 240px;
+	height: 270px;
+}
+
+.explore-overlay-img-2{
+	background-image: url('https://cdn.pixabay.com/photo/2016/01/18/09/21/conference-room-1146244_960_720.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 240px;
+	height: 270px;
+}
+
+.explore-overlay-img-3{
+	background-image: url('https://i1.wp.com/www.keypersonofinfluence.com/wp/wp-content/uploads/2015/05/entrevo-keypersonofinfluence-exercises-in-the-gym.jpg?fit=848%2C566');
+	background-size: cover;
+	background-position: center;
+	width: 240px;
+	height: 270px;
+}
+
+.explore-overlay{
+	position: relative;
+	top: 40px;
+	left: 50px;
+}
+
+.overlay-text{
+	padding-top: 80px;
+	color: #232323;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Oswail', sans-serif;
+	font-weight: bold;
+}
+
+.wellness{
+	font-size: 15px;
+	color: #232323;
+	margin-top: 13px;
+	padding: 10px 70px 0px 70px;
+	margin-bottom: 20px;
+}
+
+.explore-link{
+	text-decoration: none !important;
+	color: #bf0662;
+	font-size: 23px;
+	font-family: 'Oswail', sans-serif;
+	letter-spacing: 1px;
+	transition: all 0.3s ease-in-out;
+}
+
+.explore-link:hover{
+	cursor: pointer;
+	color: #62bf06;
+	transition: all 0.3s ease-in-out;
+}
+
+.services-row{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+	text-align: left;
+	width: 100%;
+}
+
+.services-section{
+	background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1533229613598-751dc97ec35f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 450px;
+	padding-top: 50px;
+}
+
+.fa-coins,
+.fa-calendar-alt,
+.fa-key,
+.fa-wifi,
+.fa-address-card,
+.fa-window-close{
+	color: #bf0662;
+}
+
+.service-text{
+	text-align: center;
+	color: #bf0662;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Rochester', cursive;
+	letter-spacing: 2px;
+	padding-bottom: 10px;
+}
+
+.service-header{
+	text-align: center;
+	color: #f0f0f0;
+	font-size: 25px;
+	font-weight: 900;
+	font-family: 'Oswail', sans-serif;
+	letter-spacing: 2px;
+	padding-bottom: 20px;
+}
+
+.my-services-header{
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Oswail', sans-serif;
+	font-weight: bolder;
+}
+
+.services-col{
+	padding: 20px;	
+}
+
+.services-col p{
+	color: #f0f0f0;
+	font-size: 15px;
+}
+
+.rooms-row{
+	display: inline-block;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 13px;
+}
+
+.my-events-image{
+	width: 300px;
+	height: 250px;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.3s ease-in-out;
+}
+
+.my-events-image:hover{
+	transform: scale(1.05); 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.room-name{
+	color: #232323;
+	font-family: 'Oswail', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 20px;
+	margin-bottom: 0px;
+}
+
+.room-description{
+	color: #232323;
+	font-family: 'Oswail', sans-serif;
+	font-size: 16px;
+}
+
+.view-details{
+	background-color: red;
+	margin-bottom: 10px;
+	margin-top: 2px;
+	padding: 5px 6px;
+}
+
+.testimonial-section{
+	background-color: #62bf06;
+}
+
+.testimonial-h2{
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	font-family: 'Rochester', cursive;
+	font-weight: bolder;
+	color: #fff;
+
+}
+
+.testimonial-p{
+	text-align: center;
+	font-family: 'Rochester', cursive;
+	color: #fff;
+	font-size: 25px;
+	padding-top: 5px;
+	margin-bottom: 20px;
+}
+
+.testimonial-row{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.testimonial-image1,
+.testimonial-image2,
+.testimonial-image3{
+	background-size: cover;
+	background-position: center;
+	width: 210px;
+	height: 250px;
+	display: block;
+	overflow: hidden;
+	border-radius: 80%;
+	margin: 0 auto;
+	transition: all 0.3s ease-in-out;	
+}
+
+.testimonial-image1:hover,
+.testimonial-image2:hover,
+.testimonial-image3:hover{
+	transform: scale(1.05); 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;	
+}
+
+.testimonial-image1{
+	background-image: url('https://ichef.bbci.co.uk/images/ic/640x360/p074mmrq.jpg');
+	
+}
+
+.testimonial-image2{
+	background-image: url('https://dzyr.files.wordpress.com/2015/06/black-businessman-thinking.jpg');
+}
+
+.testimonial-image3{
+	background-image: url('https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2018/10/Michel-Sproles-Bio-3-e1540993572479-767x675.jpg');
+}
+
+.testimonial-col{
+	background-color: #fff;
+	border-radius: 100px 0px 100px 0px;
+}
+
+.my-testimonial-col{
+	width: 270px;
+	background-color: #fff;
+	text-align: center;
+	padding: 10px;
+	border-radius: 100px 0px 100px 0px;
+}
+
+.my-testimonial-col h1,
+.my-testimonial-col h2{
+	text-transform: uppercase;
+	color: #bf0662;
+	font-size: 20px;
+	font-family: 'Oswail', sans-serif;
+	letter-spacing: 1px;
+}
+
+.my-testimonial-col h2{
+	font-size: 15px;
+	padding: 10px 0px 10px 0px;
+	color: #232323;
+}
+
+.my-testimonial-col p{
+	font-size: 16px;
+	font-family: 'Oswail', sans-serif;
+	padding: 10px 0px 10px 0px;
+	color: #232323;
+}
+
+.fa-star{
+	color: #bf0662;
+	padding-bottom: 10px;
+}
+
+hr.hr-style {
+  border-top: 1px solid #bf0662;
+}
+
+.roomlist-row{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.my-roomlist-col{
+	padding: 0px 20px 20px 20px;
+}
+
+.my-roomlist-col h1{
+	text-align: center;
+	font-family: 'Oswail', sans-serif;
+	font-size: 30px;
+}
+
+.roomlist-col h1{
+	font-size: 35px;
+	text-align: center;
+	color: #232323;
+	font-family: 'Oswail', sans-serif;
+	padding-bottom: 10px;
+}
+
+.classic-room,
+.classic-room-2,
+.classic-room-3,
+.classic-room-4,
+.classic-room-5,
+.classic-room-6{
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+}
+
+.classic-room{
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406_960_720.jpg');
+margin-bottom: 30px;
+}
+
+.classic-room-2{
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://cdn.pixabay.com/photo/2015/01/16/08/54/motel-601218_960_720.jpg');
+margin-bottom: 30px;
+}
+
+.classic-room-3{
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://cdn.pixabay.com/photo/2015/12/05/23/22/bedroom-1078890_960_720.jpg');
+margin-bottom: 30px;
+}
+
+.classic-room-4{
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://cdn.pixabay.com/photo/2014/10/16/08/39/bedroom-490779__340.jpg');
+margin-bottom: 30px;
+}
+
+.classic-room-5{
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416063_960_720.jpg');
+margin-bottom: 30px;
+}
+
+.classic-room-6{
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://cdn.pixabay.com/photo/2014/08/11/21/31/wall-panel-416041_960_720.jpg');
+margin-bottom: 30px;
+}
+
+.classic-room h2,
+.classic-room-2 h2,
+.classic-room-3 h2,
+.classic-room-4 h2,
+.classic-room-5 h2,
+.classic-room-6 h2{
+	color: #f0f0f0;
+	padding: 10px 30px 0px 30px;
+	font-size: 35px;
+	font-weight: 900;
+	font-family: 'Oswail', sans-serif;
+	padding-top: 30px;
+}
+
+.classic-room p,
+.classic-room-2 p,
+.classic-room-3 p,
+.classic-room-4 p,
+.classic-room-5 p,
+.classic-room-6 p{
+	color: #fff;
+	padding: 20px;
+	font-family: 'Oswail', sans-serif;
+}
+
+.wellness-row{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.welness-section h2,
+.welness-section h3,
+.welness-section h4,
+.welness-section h5{
+	text-align: center;
+	font-family: 'Oswail', sans-serif;
+	margin-bottom: 20px;
+	font-size: 35px;
+    color: #232323;
+    font-family: 'Oswail', sans-serif;
+}
+
+.wellness-image,
+.restaurant-image,
+.specialoffer-image,
+.about-image{
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+	height: 380px;
+}
+.wellness-image{
+	background-image: url('https://cdn.pixabay.com/photo/2015/07/28/21/02/woman-865021_960_720.jpg');
+}
+
+.restaurant-image{
+	background-image: url('https://cdn.pixabay.com/photo/2018/08/10/21/52/restaurant-3597677_960_720.jpg');
+}
+
+.specialoffer-image{
+	background-image: url('https://cdn.pixabay.com/photo/2017/04/25/20/18/sport-2260736_960_720.jpg');
+}
+
+.about-image{
+	background-image: url('https://cdn.pixabay.com/photo/2018/09/04/02/13/pool-bar-3652849_960_720.jpg');
+}
+
+.wellness-col{
+	width: 50%;
+	background-color: #bf9106;
+	padding: 50px;
+	color: #232323;
+	font-family: 'Oswail', sans-serif;
+}
+
+.footer-row{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #62bf06;
+	padding-top: 70px;
+}
+
+.footer-col h1{
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+	font-family: 'Oswail', sans-serif;
+	padding-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+.footer-col span{
+	color: #000;
+	font-size: 15px;
+}
+
+.footer-text{
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.col-p{
+	color: #000;
+	font-family: 'Oswail', sans-serif;
+	margin-bottom: 10px;
+}
+
+.copy-right{
+	padding-top: 30px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	background-color: #62bf06;
+	border-top: 1px solid #fff;
+}
+
+.copy-right p{
+	color: #fff;
+	padding-bottom: 20px;
+}
+
